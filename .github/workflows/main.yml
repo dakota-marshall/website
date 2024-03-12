@@ -20,10 +20,9 @@ jobs:
     # Set up any tools and build steps here
     # This example uses a Node.js toolchain to build a site
     - name: Build Eleventy (11ty)
-      # You may pin to the exact commit or the version.
-      # uses: extrawitz/11ty-dockerless-build@c80d7430000a8c370ad0535bdbc64a094a2b504b
-      uses: extrawitz/11ty-dockerless-build@v1
+      uses: TartanLlama/actions-eleventy@v1.3
       with:
+        install_dependencies: true
         args: --input src/. --config=.eleventy.js
     # When the dist_dir is ready, deploy it to neocities
     - name: Deploy to neocities
