@@ -4,12 +4,10 @@ layout: layout.html
 
 <img src="/imgs/orb_pondering.gif">
 
-I'm a Linux Enthusiast that is currently working as a Systems Administrator at Datayard. I've been using and tinkering with Linux for around 5 years at this point, both professionally and in my free time. 
+Hey, I'm Dakota! *(he/him)*
 
-Over the past few years, I have been growing and fine-tuning a home lab I use as a means of learning new things and experimenting with technology that interests me. I consider it an invaluable tool and has accounted for a large portion of my interest and technical ability. vSphere, Docker, Ansible, Linux, git, Python, most of what I know I was able to practice by spending countless nights deep in the terminals of my homelab.
+I am a Linux Engineer working in Ohio! I've been into technology for about as long as I can remember. From feeling cool as a kid when I learned how to install Minecraft mods, to making basic applications in Go and Python here in the last few years, I have always been tinkering and messing with my computer. I went down the deep-end in 2018 though when I discovered Linux. Ever since then, I have been tinkering more and more with my setup. As of writing, I am currently using NixOS and have riced my setup with Hyprland.
 
-With my lab and my determination to better myself and learn about the Linux ecosystem, In 2021 I journeyed down the path to become Red Hat certified as a Red Hat Certified Systems Administrator. It was a daunting task that soaked up a lot of late night studying and practicing. In the end, I came out certified and with a much greater understanding of Linux and the pride of accomplishing something that was no easy feat.
+I also try and dabble in art when I can! I have been trying to learn Blender since about 2022, and have been slowly improving over time.  It's been hard, but extremely rewarding. Being able to have a creative outlet has been extremely relaxing.
 
-I am always ready for a new challenge and I am always looking to further my education in any way I can. Im a tech nerd at heart and love hearing about everything going on in the world of technology. 
-
-Feel free to reach out via email, Linkedin, or Keybase for encrypted comms.
+There are other hobbies I enjoy partaking in when the mood strikes me, to name a few: Warhammer 40k, FPV Drone Flying, Go (Baduk)
