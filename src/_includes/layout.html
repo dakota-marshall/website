@@ -116,41 +116,43 @@
             </main>
 
             <aside id="rightSidebar" style="margin-left: 10px;">
-                <div class="box">
+                <div id="pet" class="box" style="margin-bottom: 10px;">
                     <iframe width="314" height="321" scrolling="no"
                         src="https://gifypet.neocities.org/pet/pet.html?name=Brutus&dob=1710266664&gender=m&element=Earth&pet=https%3A%2F%2Fi.ibb.co%2FNW4vLXr%2Fphoto-2024-03-12-14-01-48-removebg-preview.png&map=ozwomp.jpg&background=https%3A%2F%2Fsadhost.neocities.org%2Fimages%2Ftiles%2Fpplstar.gif&tablecolor=%23813d9c&textcolor=%2345e8ff"
                         frameborder="0"></iframe>
                 </div>
-                <div style="text-align: center;">
-                    <h2>You Are Visitor Number</h2>
+                <div id="rightSideBox">
+                    <div style="text-align: center;">
+                        <h2>You Are Visitor Number</h2>
+                    </div>
+                    <div align='center'><a href='https://www.free-website-hit-counter.com'><img
+                                src='https://www.free-website-hit-counter.com/c.php?d=9&id=164461&s=28' border='0'
+                                alt='Free Website Hit Counter'></a><br /><small><a
+                                href='https://www.free-website-hit-counter.com' title="Free Website Hit Counter">Free
+                                website hit counter</a></small></div>
+                    <h2>Updates</h2>
+                    <div class="box">
+                        {% include 'updates.html' %}
+                    </div>
+                    <div class="gif" style="padding-top:15px">
+                        <img alt="A wizard gif" src="/static/imgs/wizard2.gif">
+                    </div>
+                    <div class="box" style="padding-top:15px; text-align: center;">
+                        <img alt="y2k" src="/static/imgs/y2k.gif">
+                        <img alt="chrmevil" src="/static/imgs/chrmevil.gif">
+                    </div>
+                    <!-- <h2>Hi there!</h2> -->
+                    <!-- <h3>Other Tools</h3> -->
+                    <!-- <ul> -->
+                    <!--     <li><a href="https://sadgrlonline.github.io/html-cheatsheet/" target="_blank">HTML Cheatsheet</a> -->
+                    <!--     </li> -->
+                    <!--     <li><a href="/sadgrl/webmastery/webmaster-links.html" target="_blank">Webmaster Links</a></li> -->
+                    <!--     <li><a href="/sadgrl/webmastery/downloads/tiledbgs.html" target="_blank">Tiled BGs</a></li> -->
+                    <!--     <li><a href="/sadgrl/webmastery/downloads/fonts.html" target="_blank">Fonts</a></li> -->
+                    <!--     <li><a href="/sadgrl/projects/ideas/" target="_blank">Site Ideas</a></li> -->
+                    <!---->
+                    <!-- </ul> -->
                 </div>
-                <div align='center'><a href='https://www.free-website-hit-counter.com'><img
-                            src='https://www.free-website-hit-counter.com/c.php?d=9&id=164461&s=28' border='0'
-                            alt='Free Website Hit Counter'></a><br /><small><a
-                            href='https://www.free-website-hit-counter.com' title="Free Website Hit Counter">Free
-                            website hit counter</a></small></div>
-                <h2>Updates</h2>
-                <div class="box">
-                    {% include 'updates.html' %}
-                </div>
-                <div class="gif" style="padding-top:15px">
-                    <img alt="A wizard gif" src="/static/imgs/wizard2.gif">
-                </div>
-                <div class="box" style="padding-top:15px; text-align: center;">
-                    <img alt="y2k" src="/static/imgs/y2k.gif">
-                    <img alt="chrmevil" src="/static/imgs/chrmevil.gif">
-                </div>
-                <!-- <h2>Hi there!</h2> -->
-                <!-- <h3>Other Tools</h3> -->
-                <!-- <ul> -->
-                <!--     <li><a href="https://sadgrlonline.github.io/html-cheatsheet/" target="_blank">HTML Cheatsheet</a> -->
-                <!--     </li> -->
-                <!--     <li><a href="/sadgrl/webmastery/webmaster-links.html" target="_blank">Webmaster Links</a></li> -->
-                <!--     <li><a href="/sadgrl/webmastery/downloads/tiledbgs.html" target="_blank">Tiled BGs</a></li> -->
-                <!--     <li><a href="/sadgrl/webmastery/downloads/fonts.html" target="_blank">Fonts</a></li> -->
-                <!--     <li><a href="/sadgrl/projects/ideas/" target="_blank">Site Ideas</a></li> -->
-                <!---->
-                <!-- </ul> -->
             </aside>
         </div>
         <footer id="footer" style="margin-top: 10px;">
@@ -321,13 +323,27 @@
     if you want to style them separately,
     create styles for #leftSidebar and #rightSidebar */
         aside {
+            /* background-color: #241445; */
+            /* width: 200px; */
+            /* padding: 20px; */
+            /* font-size: smaller; */
+            /* this makes the sidebar text slightly smaller */
+        }
+
+        #leftSidebar {
             background-color: #241445;
             width: 200px;
             padding: 20px;
             font-size: smaller;
-            /* this makes the sidebar text slightly smaller */
         }
 
+        /* This is seperated so the pet box doesnt appear to be in the sidebar */
+        #rightSideBox {
+            background-color: #241445;
+            width: 200px;
+            padding: 20px;
+            font-size: smaller;
+        }
 
         /* this is the color of the main content area,
     between the sidebars! */
