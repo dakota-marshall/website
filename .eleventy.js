@@ -3,7 +3,7 @@ const { DateTime } = require("luxon");
 
 module.exports = function(eleventyConfig) {
   // Copy the `img/` directory
-  eleventyConfig.addPassthroughCopy("src/imgs");
+  eleventyConfig.addPassthroughCopy("src/static");
   
   // Plugins
   eleventyConfig.addPlugin(pluginRss);

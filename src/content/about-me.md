@@ -2,7 +2,7 @@
 layout: layout.html
 ---
 
-<img src="/imgs/orb_pondering.gif">
+<img src="/static/imgs/orb_pondering.gif">
 
 Hey, I'm Dakota! *(he/him)*
 

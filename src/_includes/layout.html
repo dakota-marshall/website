@@ -15,7 +15,7 @@
             <div id="header" style="height: 300px; display: flex; justify-content: center; align-items: center;">
                 <div class="item" style="flex-grow: 1;">
                     <a style="display: block; text-align: center">
-                        <img src="/imgs/dakota.png" style="max-width: 70%;" alt="Dakota">
+                        <img src="/static/imgs/dakota.png" style="max-width: 70%;" alt="Dakota">
                     </a>
                 </div>
                 <!-- <div class="item" style="flex-grow: 1;"> -->
@@ -26,40 +26,40 @@
                 <ul>
                     <li>
                         <div>
-                            <img src="/imgs/torch.gif" class="torch-seperator">
+                            <img src="/static/imgs/torch.gif" class="torch-seperator">
                             <a href="/">Home</a>
                         </div>
                     </li>
                     <li>
                         <div>
-                            <img src="/imgs/torch.gif" class="torch-seperator">
+                            <img src="/static/imgs/torch.gif" class="torch-seperator">
                             <a href="/content/about-me">About Me</a>
                         </div>
                     </li>
                     <li>
                         <div>
-                            <img src="/imgs/torch.gif" class="torch-seperator">
+                            <img src="/static/imgs/torch.gif" class="torch-seperator">
                             <a href="/content/posts">Posts</a>
                         </div>
                     </li>
                     <li>
                         <div>
-                            <img src="/imgs/torch.gif" class="torch-seperator">
+                            <img src="/static/imgs/torch.gif" class="torch-seperator">
                             <a href="/content/projects/">Projects</a>
                         </div>
                     </li>
                     <li>
                         <div>
-                            <img src="/imgs/torch.gif" class="torch-seperator">
+                            <img src="/static/imgs/torch.gif" class="torch-seperator">
                             <a href="/contact-me/">Contact Me</a>
                         </div>
                     </li>
-                    <!-- <li> -->
-                    <!--     <div> -->
-                    <!--         <img src="/imgs/torch.gif" class="torch-seperator"> -->
-                    <!--         <a href="/content/about-me">Link</a> -->
-                    <!--     </div> -->
-                    <!-- </li> -->
+                    <li>
+                        <div>
+                            <img src="/static/imgs/torch.gif" class="torch-seperator">
+                            <a href="/content/links/">Links</a>
+                        </div>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -72,22 +72,22 @@
                 </div>
                 <div class="box" style="padding-top:15px; text-align: center;">
                     <a href="https://bonealisa.123guestbook.com">
-                        <img alt="Sign my guestbook!" src="/imgs/sign_guest_book.gif">
+                        <img alt="Sign my guestbook!" src="/static/imgs/sign_guest_book.gif">
                     </a>
-                    <img alt="88x31 button that says Stand with Palestine" src="/imgs/standwith.png">
+                    <img alt="88x31 button that says Stand with Palestine" src="/static/imgs/standwith.png">
                     <a href="https://neocities.org/">
-                        <img alt="neocities" src="/imgs/neocities_button.gif">
+                        <img alt="neocities" src="/static/imgs/neocities_button.gif">
                     </a>
-                    <img alt="vim" src="/imgs/vim.gif">
-                    <a href="/feed.xml"><img alt="rss" src="/imgs/rss.png"></a>
+                    <img alt="vim" src="/static/imgs/vim.gif">
+                    <a href="/feed.xml"><img alt="rss" src="/static/imgs/rss.png"></a>
                     <hr />
-                    <img alt="feminism" src="/imgs/feminism.gif">
-                    <img alt="communism" src="/imgs/anarch_communism.png">
-                    <img alt="linux" src="/imgs/linux.png">
-                    <img alt="blender" src="/imgs/blender.png">
+                    <img alt="feminism" src="/static/imgs/feminism.gif">
+                    <img alt="communism" src="/static/imgs/anarch_communism.png">
+                    <img alt="linux" src="/static/imgs/linux.png">
+                    <img alt="blender" src="/static/imgs/blender.png">
                 </div>
                 <div class="gif" style="padding-top:15px">
-                    <img alt="A wizard gif" src="/imgs/wizard.gif">
+                    <img alt="A wizard gif" src="/static/imgs/wizard.gif">
                 </div>
                 <h2>Recent Posts</h2>
                 <div class="box">
@@ -133,11 +133,11 @@
                     {% include 'updates.html' %}
                 </div>
                 <div class="gif" style="padding-top:15px">
-                    <img alt="A wizard gif" src="/imgs/wizard2.gif">
+                    <img alt="A wizard gif" src="/static/imgs/wizard2.gif">
                 </div>
                 <div class="box" style="padding-top:15px; text-align: center;">
-                    <img alt="y2k" src="/imgs/y2k.gif">
-                    <img alt="chrmevil" src="/imgs/chrmevil.gif">
+                    <img alt="y2k" src="/static/imgs/y2k.gif">
+                    <img alt="chrmevil" src="/static/imgs/chrmevil.gif">
                 </div>
                 <h2>Hi there!</h2>
                 <h3>Other Tools</h3>
@@ -153,10 +153,10 @@
             </aside>
         </div>
         <footer id="footer" style="margin-top: 10px;">
-            <div><img alt="computer" src="/imgs/computerconnect.gif" /> <a rel="me"
+            <div><img alt="computer" src="/static/imgs/computerconnect.gif" /> <a rel="me"
                     href="https://infosec.town/@bonealisa">CC0 Public Domain, 2024<a> <img alt="command"
-                            src="/imgs/mainframe.gif"></div>
-            <div><img src="/imgs/walkingwizard.gif" style="position: relative; float: center"></div>
+                            src="/static/imgs/mainframe.gif"></div>
+            <div><img src="/static/imgs/walkingwizard.gif" style="position: relative; float: center"></div>
         </footer>
     </div>
     <!-- THIS IS THE CSS !-->
@@ -178,7 +178,7 @@
 
         :root {
             /* --header-image: url('https://sadhost.neocities.org/images/layouts/wp.jpeg'); */
-            --header-image: url('/imgs/skull.jpg');
+            --header-image: url('/static/imgs/skull.jpg');
             --body-bg-image: url('https://sadhost.neocities.org/images/tiles/purplesky.gif');
 
             /* colors */
@@ -228,6 +228,7 @@
             background-size: 90px;
             color: #fceaff;
             background-image: var(--body-bg-image);
+            cursor: url('/static/cursors/wand.cur'), auto;
         }
 
         * {
@@ -360,8 +361,12 @@
             /* this centers the footer text */
         }
 
+        a:hover {
+            cursor: url('/static/cursors/select.cur'), auto;
+        }
+
         hr {
-            background: url('/imgs/lightning-sep.gif') no-repeat top center;
+            background: url('/static/imgs/lightning-sep.gif') no-repeat top center;
         }
 
         h1,

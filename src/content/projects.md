@@ -20,7 +20,7 @@ Here a are a list of the projects I am working on!
 
 OGS Python is an API wrapper written in Python for the Go server I play on, [online-go.com](https://online-go.com). Its been a fun challenge in learning how to integrate with both a REST API, and a realtime Socket.IO API, and how to act as a middle-man between the client and server.
 
-<img src="/imgs/lightning-sep.gif" style="width: 70%;"/>
+<img src="/static/imgs/lightning-sep.gif" style="width: 70%;"/>
 
 ### [Heathcliff-RSS](https://gitlab.com/dakota.marshall/heathcliff-rss)
 
@@ -28,7 +28,7 @@ OGS Python is an API wrapper written in Python for the Go server I play on, [onl
 
 This is an application I wrote to be able to get Heathcliff comics in my RSS feed. It was an interesting test project for learning how to use the Selenium library for interacting and scraping data from webpages, and how to deploy a python script as a full application.
 
-<img src="/imgs/lightning-sep.gif" style="width: 70%;"/>
+<img src="/static/imgs/lightning-sep.gif" style="width: 70%;"/>
 
 ### [AutoClicker](https://github.com/dakota-marshall/autoclicker)
 
