@@ -8,7 +8,7 @@ title: Posts
 <hr />
 
 {% for post in collections.post reversed %}
-<h2>{{ post.data.title }} - {{ post.date | postDate }}</h2>
+<h2><a href="{{ post.url }}">{{ post.data.title }} - {{ post.date | postDate }}</a></h2>
 <p><i>{{ post.data.summary }}</i></p>
 <p>Tags:
     {% for tag in post.data.tags %}
