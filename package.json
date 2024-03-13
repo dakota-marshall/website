@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "@11ty/eleventy-plugin-rss": "^1.2.0"
+  },
+  "dependencies": {
+    "luxon": "^3.4.4"
   }
 }

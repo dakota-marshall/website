@@ -1,0 +1,21 @@
+---
+layout: layout.html
+eleventyExcludeFromCollections: true
+title: Posts
+---
+<h1>{{ title }}</h1>
+
+<hr />
+
+{% for post in collections.post reversed %}
+<h2>{{ post.data.title }} - {{ post.date | postDate }}</h2>
+<p><i>{{ post.data.summary }}</i></p>
+<p>Tags:
+    {% for tag in post.data.tags %}
+    {% if tag != 'post' %}
+    <a class="tag" href="/content/categories/{{ tag }}">{{ tag }}</a>
+    {% endif %}
+    {% endfor %}
+</p>
+<hr />
+{% endfor %}

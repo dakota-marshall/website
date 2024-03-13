@@ -39,6 +39,12 @@
                     <li>
                         <div>
                             <img src="/imgs/torch.gif" class="torch-seperator">
+                            <a href="/content/posts">Posts</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="/imgs/torch.gif" class="torch-seperator">
                             <a href="/content/projects/">Projects</a>
                         </div>
                     </li>
@@ -48,12 +54,6 @@
                             <a href="/contact-me/">Contact Me</a>
                         </div>
                     </li>
-                    <!-- <li> -->
-                    <!--     <div> -->
-                    <!--         <img src="/imgs/torch.gif" class="torch-seperator"> -->
-                    <!--         <a href="/content/about-me">Link</a> -->
-                    <!--     </div> -->
-                    <!-- </li> -->
                     <!-- <li> -->
                     <!--     <div> -->
                     <!--         <img src="/imgs/torch.gif" class="torch-seperator"> -->
@@ -79,6 +79,7 @@
                         <img alt="neocities" src="/imgs/neocities_button.gif">
                     </a>
                     <img alt="vim" src="/imgs/vim.gif">
+                    <a href="/feed.xml"><img alt="rss" src="/imgs/rss.png"></a>
                     <hr />
                     <img alt="feminism" src="/imgs/feminism.gif">
                     <img alt="communism" src="/imgs/anarch_communism.png">
@@ -108,7 +109,7 @@
                 </ul>
             </aside>
             <main>
-                <div style="text-align: center; overflow-x: auto">
+                <div style="text-align: left; overflow-x: auto">
                     {{ content }}
                 </div>
             </main>
@@ -129,13 +130,7 @@
                             website hit counter</a></small></div>
                 <h2>Updates</h2>
                 <div class="box">
-                    <p>I have recently updated this tool as of August 2022!</p>
-                    <ul style="padding-left:10px;">
-                        <li>Rewrote the JS to generate cleaner code</li>
-                        <li>Rewrote the CSS in a way that hopefully makes much more sense to edit</li>
-                        <li>Added a couple of new features!</li>
-                        <li>Old version is still available <a href="old.html" target="_blank">here</a></li>
-                    </ul>
+                    {% include 'updates.html' %}
                 </div>
                 <div class="gif" style="padding-top:15px">
                     <img alt="A wizard gif" src="/imgs/wizard2.gif">

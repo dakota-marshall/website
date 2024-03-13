@@ -1,4 +1,5 @@
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const { DateTime } = require("luxon");
 
 module.exports = function(eleventyConfig) {
   // Copy the `img/` directory
@@ -6,6 +7,11 @@ module.exports = function(eleventyConfig) {
   
   // Plugins
   eleventyConfig.addPlugin(pluginRss);
+
+  //Filters
+  eleventyConfig.addFilter("postDate", (dateObj) => {
+    return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
+  });
 
   return {
     passthroughFileCopy: true
