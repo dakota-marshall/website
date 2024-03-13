@@ -1,6 +1,8 @@
 ---
 layout: layout.html 
 ---
+<div style="text-align: center;">
+
 # Under Construction
 
 ![Epic Wizard](/imgs/epic-wizard.gif)
@@ -21,7 +23,14 @@ Made from the sadgrl template
     <a href="https://fediring.net/next?host=dakotamarshall.net">→</a>
 </p>
 
-## Dragons Den
+<img src="/imgs/lightning-sep.gif" style="width: 70%;"/>
+
+<div style="display: flex; justify-content: center; align-items: center;">
+    <img src="/imgs/reddragon1.gif" style="width: 30%"> 
+    <h2>Dragons Den</h2>
+    <img src="/imgs/reddragon2.gif" style="width: 30%;">
+</div>
+<img src="/imgs/dragon001.gif" s>
 
 Click the dragons to help them grow!
 
@@ -32,4 +41,6 @@ Click the dragons to help them grow!
 <a href="https://dragcave.net/view/KVWFT"><img src="https://dragcave.net/image/KVWFT.gif" style="border-width:0; padding: 10px" alt="Adopt one today!"/></a>
 </div>
 
-<a href="https://www.allureofnds.net/"><img src="https://static.allureofnds.net/images/banner.png"/></a>
+<a href="https://www.allureofnds.net/"><img src="https://static.allureofnds.net/images/siglinks/big.png"></a>
+
+</div>
