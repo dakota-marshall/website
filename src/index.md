@@ -26,7 +26,10 @@ Made from the sadgrl template
 Click the dragons to help them grow!
 
 <div class="box", style="text-align: center">
-<a href="https://dragcave.net/view/bDFXh"><img src="https://dragcave.net/image/bDFXh.gif" style="border-width:0" alt="Adopt one today!"/></a>
+<a href="https://dragcave.net/view/bDFXh"><img src="https://dragcave.net/image/bDFXh.gif" style="border-width:0; padding: 10px" alt="Adopt one today!"/></a>
+<a href="https://dragcave.net/view/8z1NV"><img src="https://dragcave.net/image/8z1NV.gif" style="border-width:0; padding: 10px" alt="Adopt one today!"/></a>
+<a href="https://dragcave.net/view/biTNi"><img src="https://dragcave.net/image/biTNi.gif" style="border-width:0; padding: 10px" alt="Adopt one today!"/></a>
+<a href="https://dragcave.net/view/KVWFT"><img src="https://dragcave.net/image/KVWFT.gif" style="border-width:0; padding: 10px" alt="Adopt one today!"/></a>
 </div>
 
 <a href="https://www.allureofnds.net/"><img src="https://static.allureofnds.net/images/banner.png"/></a>
