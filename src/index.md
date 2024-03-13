@@ -29,3 +29,4 @@ Click the dragons to help them grow!
 <a href="https://dragcave.net/view/bDFXh"><img src="https://dragcave.net/image/bDFXh.gif" style="border-width:0" alt="Adopt one today!"/></a>
 </div>
 
+<a href="https://www.allureofnds.net/"><img src="https://static.allureofnds.net/images/banner.png"/></a>
