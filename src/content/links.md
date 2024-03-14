@@ -5,7 +5,7 @@ layout: layout.html
 <h1 style="text-align: center;">{{ title }}</h1>
 
 <div style="text-align: center;">
-    <img src="/static/imgs/wizard77.gif">
+    <img src="/static/imgs/wizard77.gif" style="width: 40%">
 </div>
 A collection of cool links that I have found across the interwebs
 
