@@ -25,7 +25,25 @@ layout: layout.html
         <a href="https://fediring.net/next?host=dakotamarshall.net">→</a>
     </p>
 
+    <img src="/static/imgs/boltballs.gif" style="width: 100%;" />
 
+    <h2>Currently Casting Spells To:</h2>
+
+    <div style="display: flex; justify-content: center;">
+        <img src="/static/imgs/orb.gif" style="width: 40%; height: 40%" />
+
+        <div class="nowplayingcard">
+            <div class="nowplayingcontainer-inner">
+                <img id="trackart" src="#" style="width: 125px">
+                <div class="trackInfo">
+                    <a id="tracktitle"></a>
+                    <a href="#" id="trackartist"></a>
+                </div>
+            </div>
+        </div>
+
+        <img src="/static/imgs/orb.gif" style="width: 40%; height: 40%" />
+    </div>
     <img src="/static/imgs/boltballs.gif" style="width: 100%;" />
 
     <div style="display: flex; justify-content: center; align-items: center;">
@@ -64,5 +82,72 @@ layout: layout.html
             <img src="https://file.garden/ZLnqRCeVhBA68gsz/0.%20Assets/sitebutton.gif" width="88" height="31">
         </a>
         <a href="https://dimden.dev/"><img src="https://dimden.dev/services/images/88x31.gif"></a>
+        <a href="https://melps.neocities.org" target="_blank">
+            <img src="https://melps.neocities.org/limk1.jpg" width='88px'>
+        </a>
+        <a href="https://onemuri.men/" target="_blank">
+            <img src="/static/imgs/onemuri.gif" width='88px'>
+        </a>
     </div>
 </div>
+<!-- last.fm script -->
+<script>
+
+    var lastfmData = {
+        baseURL:
+            "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=",
+        // Your Last.fm Username
+        user: "bone-a-lisa",
+        // Your API key
+        api_key: "353804e2938cde0b605c769d7b363e2c",
+        additional: "&format=json&limit=1"
+    };
+
+    var getSetLastFM = function () {
+        $.ajax({
+            type: "GET",
+            url:
+                lastfmData.baseURL +
+                lastfmData.user +
+                "&api_key=" +
+                lastfmData.api_key +
+                lastfmData.additional,
+            dataType: "json",
+            success: function (resp) {
+                var recentTrack = resp.recenttracks.track[0];
+                var formatted =
+                    "<img src='https://files.catbox.moe/41escm.png'> " + recentTrack.name;
+                $("a#tracktitle")
+                    .html(formatted)
+                    .attr("href", recentTrack.url)
+                    .attr("title", recentTrack.name + " by " + recentTrack.artist["#text"])
+                    .attr("target", "_blank");
+
+                var artistFormatted =
+                    "<img src='https://files.catbox.moe/h4su1r.png'> " +
+                    recentTrack.artist["#text"];
+                $("a#trackartist")
+                    .html(artistFormatted)
+                    .attr("title", "Artist : " + recentTrack.artist["#text"]);
+                $("img#trackart").attr("src", recentTrack.image[2]["#text"]);
+            },
+            error: function (resp) {
+                $("a#tracktitle").html(
+                    "<img src='https://i.imgur.com/EgWjJry.png'>" + "Silence!"
+                );
+                $("img#trackart").attr("src", "https://i.imgur.com/Q6cCswP.jpg");
+                var artistFormatted =
+                    "<img src='https://i.imgur.com/fae5XZA.png'>Prashant Shrestha";
+                $("a#trackartist")
+                    .html(artistFormatted)
+                    .attr("href", "www.prashant.me/");
+            }
+        });
+    };
+
+    // Get the new one.
+    getSetLastFM();
+    // Start the countdown.
+    setInterval(getSetLastFM, 10 * 1000);
+
+</script>
