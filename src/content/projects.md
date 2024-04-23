@@ -2,6 +2,23 @@
 title: Projects
 layout: layout.html
 ---
+<style>
+
+.imageList {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.artImage {
+        width: 100%;
+        max-width: 125px;
+        padding: 2px;
+}
+
+</style>
 <div style="text-align: center;">
 
 <h1><img src="/static/imgs/wizardstufflogo.gif" style="width: 75%;"/></h1>
@@ -12,9 +29,20 @@ Here a are a list of the projects I am working on!
 
 ## Art
 
-### [Blender Renders](https://pixelfed.social/c/627155609825384315)
+### [Blender Renders](/content/art/)
 
-<iframe title="Pixelfed Profile Embed" src="https://pixelfed.social/BoneALisa/embed" class="pixelfed__embed" style="max-width: 100%; max-height: 100%; border: 0" width="400" height="450" allowfullscreen="allowfullscreen"></iframe>
+<div class="imageList">
+{% for art in collections.art reversed limit:9 %}
+<div class="imageEntry" id="{{ art.data.title }}">
+    <a href="/content/art/#{{ art.data.title }}">
+        <img class="artImage" src="{{ art.data.arturl }}">
+    </a>
+</div>
+{% endfor %}
+</div>
+<a href="/content/art/">See them all!...</a>
+</br>
+<img src="/static/imgs/lightning-sep.gif" style="width: 70%;"/>
 
 ## Coding
 

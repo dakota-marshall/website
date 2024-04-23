@@ -1,0 +1,55 @@
+<!-- This is a piece that generates the like counter from a mastodon post -->
+<!-- Pixelfed doesnt support unauthenticated api calls, so this wont work -->
+<!-- https://drewsh.com/making-a-like-counter.html -->
+
+<script>
+
+    // of the form instance/@user/post_id
+    const url = "{{ art.mastodon_link }}";
+    // Regular expression to extract the domain and post ID
+    const regex = /^https?:\/\/([^/]+)\/@[^/]+\/(\d+)$/;
+
+    // Use the regular expression to match the URL
+    const match = url.match(regex);
+    if (match) {
+        const instance = "https://" + match[1];
+        const postId = match[2];
+
+        // Mastodon API endpoint to get status (post) details
+        const apiUrl = `${instance}/api/v1/statuses/${postId}`;
+
+        // Fetch data from Mastodon API
+        fetch(apiUrl, {
+            headers: {},
+        })
+            .then(response => response.json())
+            .then(data => {
+                // Extract the number of likes (favorites) from the response
+                const likesCount = data.favourites_count;
+
+                // make the likes counter visible
+                document.getElementById('likes-container')
+                    .classList
+                    .remove('hidden-without-js');
+
+                // Add it to the likes counter
+                let likesItem = document.getElementById('post-likes');
+                likesItem.textContent = likesCount;
+                likesItem.href = url;
+                // Added for screenreaders and non graphical browsers
+                document.getElementById('post-likes-label').textContent = "Likes: ";
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    } else {
+        console.error("URL does not match the expected pattern.");
+    }
+
+</script>
+
+{% if article.mastodon_link %}
+<span id="likes-container" class="hidden-without-js">
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <span class="visually-hidden" id="post-likes-label"></span>
+    <a href="#" title="link to social post" id="post-likes"></a>
+</span>
+{% endif %}
