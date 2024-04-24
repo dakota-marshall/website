@@ -60,28 +60,31 @@ layout: layout.html
     <p>Click the dragons to help them grow!</p>
 
     <div class="box" , style="text-align: center">
-        <a href="https://dragcave.net/view/bDFXh">
-            <img src="https://dragcave.net/image/bDFXh.gif" style="border-width:0; padding: 10px"
-                alt="Adopt one today!" /></a>
-        <a href="https://dragcave.net/view/8z1NV">
-            <img src="https://dragcave.net/image/8z1NV.gif" style="border-width:0; padding: 10px"
-                alt="Adopt one today!" /></a>
-        <a href="https://dragcave.net/view/biTNi"><img src="https://dragcave.net/image/biTNi.gif"
-                style="border-width:0; padding: 10px" alt="Adopt one today!" /></a>
-        <a href="https://dragcave.net/view/KVWFT"><img src="https://dragcave.net/image/KVWFT.gif"
-                style="border-width:0; padding: 10px" alt="Adopt one today!" /></a>
-        <a href='https://dragcave.net/view/BOLsi'>
-            <img style="border-width:0; padding: 10px" src='https://dragcave.net/image/BOLsi.gif'
-                style='border-width: 0' alt='Adopt one today!' /></a>
-        <a href='https://dragcave.net/view/DdGgH'>
-            <img style="border-width:0; padding: 10px" src='https://dragcave.net/image/DdGgH.gif'
-                style='border-width: 0' alt='Adopt one today!' /></a>
-        <a href='https://dragcave.net/view/xpUAU'>
-            <img style="border-width:0; padding: 10px" src='https://dragcave.net/image/xpUAU.gif'
-                style='border-width: 0' alt='Adopt one today!' /></a>
-        <a href='https://dragcave.net/view/GpAEb'>
-            <img style="border-width:0; padding: 10px" src='https://dragcave.net/image/GpAEb.gif'
-                style='border-width: 0' alt='Adopt one today!' /></a>
+        {% assign dragons = "bDFXh
+        8z1NV
+        biTNi
+        KVWFT
+        BOLsi
+        DdGgH
+        xpUAU
+        GpAEb
+        1ufTn
+        hOsIP
+        hryKG
+        3oNed
+        qkCBL
+        8ZEGk
+        MBGkB
+        2suZM
+        Ch7Pd
+        d15e8
+        YgPu9" | split: "\n" %}
+        {% for dragon in dragons %}
+        <a href='https://dragcave.net/view/{{ dragon | lstrip }}'>
+            <img style="border-width:0; padding: 10px" src='https://dragcave.net/image/{{ dragon | lstrip }}.gif'
+                style='border-width: 0' alt='Adopt one today!' />
+        </a>
+        {% endfor %}
     </div>
 
     <a href="https://www.allureofnds.net/"><img style="padding-top: 10px;"
