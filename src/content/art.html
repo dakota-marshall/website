@@ -10,7 +10,12 @@
 
 <body>
     <div class="floating">
-        <a id="homeButton" href="/">← Home</a>
+        <a id="homeButton" href="/content/projects">
+            <img id="homeButton" src="/static/imgs/back.gif" alt="← Home<">
+        </a>
+    </div>
+    <div id="sideImages" class="floating">
+
     </div>
     <div id="imageList">
         {% for art in collections.art reversed %}
@@ -18,7 +23,15 @@
             <h2 class="entryTitle">
                 <a href="/content/art/#{{ art.data.title }}">{{ art.data.title }}</a>
             </h2>
+            {% if art.data.urltype == 'img' %}
             <img class="artImage" src="{{ art.data.arturl }}">
+            {% endif %}
+
+            {% if art.data.urltype == 'vid' %}
+            <video class="artImage" autoplay controls muted loop>
+                <source src="{{ art.data.arturl }}">
+            </video>
+            {% endif %}
             <p class="entryDate">Date: {{ art.date | postDate }}</p>
             <div class="entryDescription">{{ art.templateContent }}</div>
             <p class="entryTags">Tags:

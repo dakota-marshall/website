@@ -35,7 +35,14 @@ Here a are a list of the projects I am working on!
 {% for art in collections.art reversed limit:9 %}
 <div class="imageEntry" id="{{ art.data.title }}">
     <a href="/content/art/#{{ art.data.title }}">
+        {% if art.data.urltype == 'img' %}
         <img class="artImage" src="{{ art.data.arturl }}">
+        {% endif %}
+        {% if art.data.urltype == 'vid' %}
+        <video class="artImage" autoplay muted loop>
+            <source src="{{ art.data.arturl }}">
+        </video>
+        {% endif %}
     </a>
 </div>
 {% endfor %}

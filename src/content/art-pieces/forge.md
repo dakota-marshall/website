@@ -2,6 +2,7 @@
 title: The Forging
 date: 2024-03-12
 arturl: /static/imgs/art/forge.jpg
+urltype: img
 tags: 
   - Blender
   - DND

@@ -2,6 +2,7 @@
 title: Eclipse
 date: 2024-04-16
 arturl: /static/imgs/art/eclipse.jpg
+urltype: img
 tags: 
   - Blender 
   - Eclipse
