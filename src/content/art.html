@@ -9,13 +9,18 @@
 </head>
 
 <body>
-    <div class="floating">
+    <div id="floatingBox" style="position: relative;">
         <a id="homeButton" href="/content/projects">
             <img id="homeButton" src="/static/imgs/back.gif" alt="← Home<">
         </a>
+        <img id="globeWizard" style="position: fixed; left: 10px; bottom: 10px; z-index: 10;"
+            src="/static/imgs/globewizard.gif">
     </div>
     <div id="sideImages" class="floating">
 
+    </div>
+    <div id="title">
+        <img src="/static/imgs/wizard-creations.gif">
     </div>
     <div id="imageList">
         {% for art in collections.art reversed %}
@@ -61,11 +66,18 @@
     }
 
     .floating {
-        postion: relative;
+        postion: fixed;
+    }
+
+    #title {
+        text-align: center;
+        width: 66%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #homeButton {
-        position: absolute;
+        position: fixed;
         top: 5px;
         left: 10px;
     }
