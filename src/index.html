@@ -3,13 +3,39 @@ layout: layout.html
 ---
 <div style="text-align: center;">
 
-    <h1>Under Construction</h1>
+    <h1>Welcome!</h1>
 
     <img src="/static/imgs/epic-wizard.gif" />
 
-    <p>This site is undergoing construction</p>
+    <p>Howdy! Welcome to my magic corner of the internet! My name is Dakota and I will be your guide!</p>
     <p></p>
-    <p>Not everything is done as of yet. Feel free to have a look around while I clean up the place!</p>
+    <p>I like to play video-games, make Blender art, mess with computers, and jump through about a billion other
+        hobbies!</p>
+    <p>
+    <p>Feel free to look around, this place needs a lot of work but its my little place!</p>
+
+    <img src="/static/imgs/boltballs.gif" style="width: 100%;" />
+
+    <h3>Check Out My Latest Piece Of Art!</h3>
+
+    {% for art in collections.art %}
+    <!-- This will only show the last entry in the list -->
+    {% if forloop.last == true %}
+    {% if art.data.urltype == 'img' %}
+    <a href="/content/art/#{{ art.data.title }}">
+        <img class="artImage" src="{{ art.data.arturl }}">
+    </a>
+    {% endif %}
+
+    {% if art.data.urltype == 'vid' %}
+    <a href="/content/art/#{{ art.data.title }}">
+        <video class="artImage" autoplay controls muted loop>
+            <source src="{{ art.data.arturl }}">
+        </video>
+    </a>
+    {% endif %}
+    {% endif %}
+    {% endfor %}
 
     <!-- ![Seperator](/static/imgs/boltballs.gif) -->
 
@@ -59,9 +85,9 @@ layout: layout.html
         <a href="https://mesoscale.neocities.org/">
             <img src="/static/imgs/meso_badge.gif" style="box-shadow: 0px 2px 4px #00362d8a;">
         </a>
-        <a href="https://schelofthesea.neocities.org">
-            <img src="https://file.garden/ZLnqRCeVhBA68gsz/0.%20Assets/sitebutton.gif" width="88" height="31">
-        </a>
+        <!-- <a href="https://schelofthesea.neocities.org"> -->
+        <!--     <img src="https://file.garden/ZLnqRCeVhBA68gsz/0.%20Assets/sitebutton.gif" width="88" height="31"> -->
+        <!-- </a> -->
         <a href="https://dimden.dev/"><img src="https://dimden.dev/services/images/88x31.gif"></a>
         <a href="https://melps.neocities.org" target="_blank">
             <img src="https://melps.neocities.org/limk1.jpg" width='88px'>
@@ -69,6 +95,13 @@ layout: layout.html
         <a href="https://onemuri.men/" target="_blank">
             <img src="/static/imgs/onemuri.gif" width='88px'>
         </a>
+        <a href="https://sheppy.neocities.org/" target="blank"><img
+                src="https://sheppy.neocities.org/sillysite.gif"></a>
+        <a href="https://antiamorous.neocities.org/indeximgs/antiamobutton.gif" target="blank"><img
+                src="https://antiamorous.neocities.org/indeximgs/antiamobutton.gif"></a>
+        <a href="https://lobre.neocities.org/"><img
+                src="https://lobre.neocities.org/pics/internetbuttons/lobsterbutton.gif"></a>
+        <a href="https://linwood.neocities.org"><img src="https://linwood.neocities.org/images/linwoodbutton2.gif"></a>
     </div>
 
     <img src="/static/imgs/boltballs.gif" style="width: 100%;" />
@@ -114,6 +147,14 @@ layout: layout.html
             src="https://static.allureofnds.net/images/siglinks/big.png"></a>
 
 </div>
+<style>
+    .artImage {
+        width: 100%;
+        max-width: 250px;
+        border: 2px solid;
+        border-color: #ED64F5;
+    }
+</style>
 <!-- last.fm script -->
 <script>
 
