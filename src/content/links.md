@@ -16,3 +16,9 @@ Any sites that dont have a button go here aswell.
 ### Cursors
 
 - [Kinulo's Home Made Cursors](https://kiunlo.neocities.org/cursors)
+
+## Politics
+
+### Socialism
+
+- [A Large page containing Socialism FAQs, lists, essays, and more](https://dessalines.github.io/essays/)
