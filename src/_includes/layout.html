@@ -97,13 +97,33 @@
                     scrolling="auto">
                 </iframe>
 
-                <h2>Recent Chronicles</h2>
+                <h2>Recent Chronicle</h2>
                 <div class="box">
                     <ul style="padding-left:10px;">
                         {% for post in collections.post reversed limit:5 %}
                         <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
                         {% endfor %}
                     </ul>
+                </div>
+                <h2>Recent Artpiece</h2>
+                <div class="box">
+                    {% for art in collections.art %}
+                    {% if forloop.last == true %}
+                    {% if art.data.urltype == 'img' %}
+                    <a href="/content/art/#{{ art.data.title }}">
+                        <img class="artImageSmall" src="{{ art.data.arturl }}">
+                    </a>
+                    {% endif %}
+
+                    {% if art.data.urltype == 'vid' %}
+                    <a href="/content/art/#{{ art.data.title }}">
+                        <video class="artImageSmall" autoplay controls muted loop>
+                            <source src="{{ art.data.arturl }}">
+                        </video>
+                    </a>
+                    {% endif %}
+                    {% endif %}
+                    {% endfor %}
                 </div>
                 <!-- <h2>Hi there!</h2> -->
                 <!-- <h3>Other Tools</h3> -->
@@ -123,11 +143,6 @@
             </main>
 
             <aside id="rightSidebar" style="margin-left: 10px;">
-                <div id="pet" class="box" style="margin-bottom: 10px;">
-                    <iframe width="314" height="321" scrolling="no"
-                        src="https://gifypet.neocities.org/pet/pet.html?name=Brutus&dob=1710266664&gender=m&element=Earth&pet=https%3A%2F%2Fi.ibb.co%2FNW4vLXr%2Fphoto-2024-03-12-14-01-48-removebg-preview.png&map=ozwomp.jpg&background=https%3A%2F%2Fsadhost.neocities.org%2Fimages%2Ftiles%2Fpplstar.gif&tablecolor=%23813d9c&textcolor=%2345e8ff"
-                        frameborder="0"></iframe>
-                </div>
                 <div id="rightSideBox">
                     <div style="text-align: center;">
                         <h2>You Are Visitor Number</h2>
@@ -138,7 +153,7 @@
                                 href='https://www.free-website-hit-counter.com' title="Free Website Hit Counter">Free
                                 website hit counter</a></small></div>
                     <h2>Updates</h2>
-                    <div class="box">
+                    <div class="box" style="overflow-y: scroll; height: 400px">
                         {% include 'updates.html' %}
                     </div>
                     <div class="gif" style="padding-top:15px">
@@ -160,6 +175,11 @@
                     <!---->
                     <!-- </ul> -->
                 </div>
+                <div id="pet" class="box" style="margin-bottom: 10px;">
+                    <iframe width="314" height="321" scrolling="no"
+                        src="https://gifypet.neocities.org/pet/pet.html?name=Brutus&dob=1710266664&gender=m&element=Earth&pet=https%3A%2F%2Fi.ibb.co%2FNW4vLXr%2Fphoto-2024-03-12-14-01-48-removebg-preview.png&map=ozwomp.jpg&background=https%3A%2F%2Fsadhost.neocities.org%2Fimages%2Ftiles%2Fpplstar.gif&tablecolor=%23813d9c&textcolor=%2345e8ff"
+                        frameborder="0"></iframe>
+                </div>
             </aside>
         </div>
         <footer id="footer" style="margin-top: 10px;">
@@ -172,6 +192,10 @@
     <!-- THIS IS THE CSS !-->
     <style>
         /* user styles */
+        .artImageSmall {
+            width: 100%;
+            max-width: 250px;
+        }
 
         .torch-seperator {
             position: relative;
