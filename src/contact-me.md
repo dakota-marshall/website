@@ -19,3 +19,4 @@ If you wish to contact the wizard, you may do so via the following:
 - Mastodon / IceFish: [@bonealisa@infosec.town](https://infosec.town/@bonealisa)
 - Pixelfed: [@bonealisa@pixelfed.social](https://pixelfed.social/i/web/profile/627144157844692883)
 - Neocities: [bonealisa](https://neocities.org/site/bonealisa)
+- SpaceHey: [bonealisa](https://spacehey.com/bonealisa)
