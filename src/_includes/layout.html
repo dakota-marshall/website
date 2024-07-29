@@ -68,10 +68,11 @@
 
         <div id="flex">
             <aside id="leftSidebar" style="margin-right: 10px; margin-bottom: 10px;">
-                <div style="text-align: center;">
-                    <a href="https://tamanotchi.world/11218c"><img src="https://tamanotchi.world/i2/11218"
-                            alt="It's tamaNOTchi! Click to feed!"></a>
+                <div class="box " id="statuscafe" style="margin-bottom: 10px">
+                    <div id="statuscafe-username"></div>
+                    <div id="statuscafe-content"></div>
                 </div>
+                <script src="https://status.cafe/current-status.js?name=bonealisa" defer></script>
                 <div class="box" style="padding-top:15px; text-align: center;">
                     <a href="https://bonealisa.123guestbook.com">
                         <img alt="Sign my guestbook!" src="/static/imgs/sign_guest_book.gif">
@@ -176,9 +177,14 @@
                     <!-- </ul> -->
                 </div>
                 <div id="pet" class="box" style="margin-bottom: 10px;">
+                    <h2 style="text-align: center;">Pet Corner</h2>
                     <iframe width="314" height="321" scrolling="no"
                         src="https://gifypet.neocities.org/pet/pet.html?name=Brutus&dob=1710266664&gender=m&element=Earth&pet=https%3A%2F%2Fi.ibb.co%2FNW4vLXr%2Fphoto-2024-03-12-14-01-48-removebg-preview.png&map=ozwomp.jpg&background=https%3A%2F%2Fsadhost.neocities.org%2Fimages%2Ftiles%2Fpplstar.gif&tablecolor=%23813d9c&textcolor=%2345e8ff"
                         frameborder="0"></iframe>
+                    <div style="text-align: center; margin-top: 10px;">
+                        <a href="https://tamanotchi.world/11218c"><img src="https://tamanotchi.world/i2/11218"
+                                alt="It's tamaNOTchi! Click to feed!"></a>
+                    </div>
                 </div>
             </aside>
         </div>
@@ -490,6 +496,18 @@
             #navbar ul {
                 flex-wrap: wrap;
             }
+        }
+
+        #statuscafe {
+            padding: .5em;
+        }
+
+        #statuscafe-username {
+            margin-bottom: .5em;
+        }
+
+        #statuscafe-content {
+            margin: 0 1em 0.5em 1em;
         }
     </style>
 
