@@ -20,3 +20,4 @@ If you wish to contact the wizard, you may do so via the following:
 - Pixelfed: [@bonealisa@pixelfed.social](https://pixelfed.social/i/web/profile/627144157844692883)
 - Neocities: [bonealisa](https://neocities.org/site/bonealisa)
 - SpaceHey: [bonealisa](https://spacehey.com/bonealisa)
+- Escargot (MSN Messenger): [bonealisa@escargot.chat](https://escargot.chat) (This one is a meme, I likely wont respond there)
