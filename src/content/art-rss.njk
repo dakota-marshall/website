@@ -3,7 +3,7 @@
   "permalink": "/art/feed.xml",
   "eleventyExcludeFromCollections": true,
   "metadata": {
-    "title": "Dakota's Blender Art'",
+    "title": "Dakota's Blender Art",
     "subtitle": "Feed for all of my Blender / 3D art!",
     "language": "en",
     "url": "https://dakotamarshall.net/",
@@ -45,7 +45,7 @@
                 <source src="{{ post.data.arturl }}"></source>
             </video>
         {% endif %}
-            <div class="entryDescription">{{ post.templateContent }}</div>
+            {{ post.templateContent }}
             <p class="entryTags">Tags:
                 {% for tag in post.data.tags %}
                 {% if tag != 'art' %}
