@@ -33,18 +33,18 @@
       <guid>{{ metadata.url }}content/art/#{{ post.data.title }}</guid>
       <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
       <description>
+        <p>
         {% if post.data.urltype == 'img' %}
         <img src="https://dakotamarshall.net{{ post.data.arturl }}" alt="Image" />
         {% endif %}
-
         {% if post.data.urltype == 'vid' %}
         <video>
             <source src="https://dakotamarshall.net{{ post.data.arturl }}" alt="Video" type="video/mp4" />
         </video>
         {% endif %}
-        {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl)}}
+        </p>
+        <p>{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl)}}</p>
       </description>
-      <enclosure url="https://dakotamarshall.net{{ post.data.arturl }}" type="video/mp4" />
     </item>
     {%- endfor %}
   </channel>
