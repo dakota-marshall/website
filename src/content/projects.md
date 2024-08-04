@@ -31,6 +31,7 @@ Here a are a list of the projects I am working on!
 
 ### [Blender Renders](/content/art/)
 
+
 <div class="imageList">
 {% for art in collections.art reversed limit:9 %}
 <div class="imageEntry" id="{{ art.data.title }}">
@@ -48,6 +49,11 @@ Here a are a list of the projects I am working on!
 {% endfor %}
 </div>
 <a href="/content/art/">See them all!...</a>
+</br>
+</br>
+<a href="/art/feed.xml">
+<img src="/static/imgs/Subscribe.gif" style="text-align: center; width: 150px;" />
+</a>
 </br>
 <img src="/static/imgs/lightning-sep.gif" style="width: 70%;"/>
 
