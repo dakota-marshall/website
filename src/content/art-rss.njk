@@ -15,37 +15,38 @@
 }
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ metadata.url }}">
-  <title>{{ metadata.title }}</title>
-  <subtitle>{{ metadata.subtitle }}</subtitle>
-  <link href="{{ permalink | absoluteUrl(metadata.url) }}" rel="self"/>
-  <link href="{{ metadata.url }}"/>
-  <updated>{{ collections.post | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
-  <id>{{ metadata.url }}</id>
-  <author>
-    <name>{{ metadata.author.name }}</name>
-    <email>{{ metadata.author.email }}</email>
-  </author>
-  {%- for post in collections.art | reverse %}
-  {%- set absolutePostUrl = post.url | absoluteUrl(metadata.url) %}
-  <entry>
-    <title>{{ post.data.title }}</title>
-    <link href="{{ metadata.url }}content/art/#{{ post.data.title }}"/>
-    <link rel="enclosure" href="https://dakotamarshall.net{{ post.data.arturl }}"/>
-    <updated>{{ post.date | dateToRfc3339 }}</updated>
-    <id>{{ metadata.url }}content/art/#{{ post.data.title }}</id>
-    <content xml:lang="{{ metadata.language }}" type="html">
-            {% if post.data.urltype == 'img' %}
-            <img src="https://dakotamarshall.net{{ post.data.arturl }}" alt="Image" />
-            {% endif %}
+<rss version="2.0">
+  <channel>
+    <title>{{ metadata.title }}</title>
+    <link>{{ metadata.url }}</link>
+    <description>{{ metadata.subtitle }}</description>
+    <lastBuildDate>{{ collections.post | getNewestCollectionItemDate | dateToRfc822 }}</lastBuildDate>
+    <language>{{ metadata.language }}</language>
+    <managingEditor>{{ metadata.author.email }} ({{ metadata.author.name }})</managingEditor>
+    <webMaster>{{ metadata.author.email }} ({{ metadata.author.name }})</webMaster>
+    
+    {%- for post in collections.art | reverse %}
+    {%- set absolutePostUrl = post.url | absoluteUrl(metadata.url) %}
+    <item>
+      <title>{{ post.data.title }}</title>
+      <link>{{ metadata.url }}content/art/#{{ post.data.title }}</link>
+      <guid>{{ metadata.url }}content/art/#{{ post.data.title }}</guid>
+      <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
+      <description>
+        {% if post.data.urltype == 'img' %}
+        <img src="https://dakotamarshall.net{{ post.data.arturl }}" alt="Image" />
+        {% endif %}
 
-            {% if post.data.urltype == 'vid' %}
-            <video>
-                <source src="https://dakotamarshall.net{{ post.data.arturl }}" alt="Video" type="video/mp4" />
-            </video>
-            {% endif %}
-            {{ post.templateContent }}
-    </content>
-  </entry>
-  {%- endfor %}
-</feed>
+        {% if post.data.urltype == 'vid' %}
+        <video>
+            <source src="https://dakotamarshall.net{{ post.data.arturl }}" alt="Video" type="video/mp4" />
+        </video>
+        {% endif %}
+        {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl)}}
+      </description>
+      <enclosure url="https://dakotamarshall.net{{ post.data.arturl }}" type="video/mp4" />
+    </item>
+    {%- endfor %}
+  </channel>
+</rss>
+
