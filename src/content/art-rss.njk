@@ -43,7 +43,7 @@
         </video>
         {% endif %}
         </p>
-        <p>{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl)}}</p>
+        {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl)}}
         ]]>
       </description>
     </item>
