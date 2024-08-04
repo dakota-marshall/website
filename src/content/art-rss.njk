@@ -33,7 +33,7 @@
       <guid>{{ metadata.url }}content/art/#{{ post.data.title }}</guid>
       <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
       <description>
-        <p>
+        <![CDATA[<p>
         {% if post.data.urltype == 'img' %}
         <img src="https://dakotamarshall.net{{ post.data.arturl }}" alt="Image" />
         {% endif %}
@@ -44,6 +44,7 @@
         {% endif %}
         </p>
         <p>{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl)}}</p>
+        ]]>
       </description>
     </item>
     {%- endfor %}
