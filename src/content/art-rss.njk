@@ -31,28 +31,11 @@
   <entry>
     <title>{{ post.data.title }}</title>
     <link href="{{ metadata.url }}content/art/#{{ post.data.title }}"/>
+    <link rel="enclosure" href="https://dakotamarshall.net{{ post.data.arturl }}"/>
     <updated>{{ post.date | dateToRfc3339 }}</updated>
     <id>{{ metadata.url }}content/art/#{{ post.data.title }}</id>
     <content xml:lang="{{ metadata.language }}" type="html">
-        <h1>{{ post.data.title }}</h1>
-
-        {% if post.data.urltype == 'img' %}
-            <img class="artImage" src="https://dakotamarshall.net{{ post.data.arturl }}"></img>
-        {% endif %}
-
-        {% if post.data.urltype == 'vid' %}
-            <video class="artImage">
-                <source src="https://dakotamarshall.net{{ post.data.arturl }}"></source>
-            </video>
-        {% endif %}
             {{ post.templateContent }}
-            <p class="entryTags">Tags:
-                {% for tag in post.data.tags %}
-                {% if tag != 'art' %}
-                <a class="tag" href="/content/categories/{{ tag }}">{{ tag }}</a>
-                {% endif %}
-                {% endfor %}
-            </p>
     </content>
   </entry>
   {%- endfor %}
