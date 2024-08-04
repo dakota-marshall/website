@@ -37,12 +37,12 @@
         <h1>{{ post.data.title }}</h1>
 
         {% if post.data.urltype == 'img' %}
-            <img class="artImage" src="{{ post.data.arturl }}"></img>
+            <img class="artImage" src="https://dakotamarshall.net{{ post.data.arturl }}"></img>
         {% endif %}
 
         {% if post.data.urltype == 'vid' %}
             <video class="artImage">
-                <source src="{{ post.data.arturl }}"></source>
+                <source src="https://dakotamarshall.net{{ post.data.arturl }}"></source>
             </video>
         {% endif %}
             {{ post.templateContent }}
