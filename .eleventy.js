@@ -1,4 +1,5 @@
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const { EleventyRenderPlugin } = require("@11ty/eleventy");
 const { DateTime } = require("luxon");
 
 module.exports = function(eleventyConfig) {
@@ -7,6 +8,7 @@ module.exports = function(eleventyConfig) {
   
   // Plugins
   eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(EleventyRenderPlugin);
 
   //Filters
   eleventyConfig.addFilter("postDate", (dateObj) => {
