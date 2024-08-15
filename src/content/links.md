@@ -11,13 +11,51 @@ A collection of cool links that I have found across the interwebs
 
 Any sites that dont have a button go here aswell.
 
+---
+
+## Table Of Contents
+
+- [Site Content](#site_content)
+  - [Cursors](#site_content_cursors)
+  - [Guestbooks](#site_content_guestbooks)
+- [IT / Sysadmin Resources](#sysadmin_resources)
+  - [Guide Websites](#sysadmin_resources_guides)
+- [Politics](#politics)
+  - [Socialism](#politics_socialism)
+
+---
+
+<section id="site_content">
+
 ## Site Content
+
+<section id="site_content_cursors">
 
 ### Cursors
 
 - [Kinulo's Home Made Cursors](https://kiunlo.neocities.org/cursors)
 
+<section id="site_content_guestbooks">
+
+### Guestbooks
+
+- [ayano's JavaScript Guestbook widget](https://virtualobserver.moe/ayano/comment-widget)
+
+<section id="sysadmin_resources">
+
+## IT / Sysadmin Resources
+
+<section id="sysadmin_resources_guides">
+
+### Guide Websites
+
+- [Server-World](https://server-world.info) the literal holy grail of sysdamin guide sites. Has basic configuration instructions for almost any server you might need to install, on any version of windows or linux. Literally GOATed I sent them $20 this thing has saved my bacon so much lol.
+
+<section id="politics">
+
 ## Politics
+
+<section id="politics_socialism">
 
 ### Socialism
 
