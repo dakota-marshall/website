@@ -18,6 +18,7 @@ Any sites that dont have a button go here aswell.
 - [Site Content](#site_content)
   - [Blinkies](#site_content_blinkies)
   - [Cursors](#site_content_cursors)
+  - [Discovery](#site_content_discovery)
   - [Guestbooks](#site_content_guestbooks)
 - [IT / Sysadmin Resources](#sysadmin_resources)
   - [Guide Websites](#sysadmin_resources_guides)
@@ -41,6 +42,12 @@ Any sites that dont have a button go here aswell.
 ### Cursors
 
 - [Kinulo's Home Made Cursors](https://kiunlo.neocities.org/cursors)
+
+<section id="site_content_discovery">
+
+### Discovery
+
+- [Marginalia Search Engine](https://search.marginalia.nu/)
 
 <section id="site_content_guestbooks">
 
