@@ -16,6 +16,7 @@ Any sites that dont have a button go here aswell.
 ## Table Of Contents
 
 - [Site Content](#site_content)
+  - [Blinkies](#site_content_blinkies)
   - [Cursors](#site_content_cursors)
   - [Guestbooks](#site_content_guestbooks)
 - [IT / Sysadmin Resources](#sysadmin_resources)
@@ -28,6 +29,12 @@ Any sites that dont have a button go here aswell.
 <section id="site_content">
 
 ## Site Content
+
+<section id="site_content_blinkies">
+
+### Blinkies
+
+- [blinkes.cafe](https://blinkies.cafe/)
 
 <section id="site_content_cursors">
 
