@@ -1,7 +1,7 @@
 ---
 title: The Divine Move
 date: 2023-11-13
-arturl: /static/imgs/art/goban.png
+arturl: /static/imgs/art/goban.jpg
 urltype: img
 tags: 
   - Blender
