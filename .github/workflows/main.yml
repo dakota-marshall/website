@@ -22,9 +22,10 @@ jobs:
     - run: |
         mkdir public/
     - name: Build Eleventy (11ty)
-      uses: extrawitz/11ty-dockerless-build@v1
+      uses: TartanLlama/actions-eleventy@v1.3
       with:
-        args: --input=src/ --output=public/ --config=.eleventy.js
+        install_dependencies: true
+        args: --input src/. --output=public/ --config=.eleventy.js
     # When the dist_dir is ready, deploy it to neocities
     - name: Deploy to neocities
       uses: bcomnes/deploy-to-neocities@v1
