@@ -21,6 +21,8 @@ jobs:
     # This example uses a Node.js toolchain to build a site
     - run: |
         mkdir public/
+    - run: |
+        pwd
     - name: Build Eleventy (11ty)
       uses: TartanLlama/actions-eleventy@v1.3
       with:
