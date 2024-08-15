@@ -1,0 +1,11 @@
+## How I Found Runescaoe
+
+<div style="float: left; padding: 10px;">
+    <figure style="margin: auto;">
+    <img src="/static/imgs/osrs/character.png" alt="my character" width= "150" style="border: thin var(--textcolor) solid;" /> 
+    <figcaption style="text-align: center;">My Character!!</figcaption>
+    </figure>
+</div>
+I remember around that time I was super into incremental games (aka idle games), and was looking for something I could have open while I work. I had heard of Runescape, now re-released under what everyone said was the "much better" OldSchool Runescape. People talked about how skilling in the game can be very AFK, and so I thought I would give it a try. I tried OSRS first, but really quickly fell off it. I personally couldn't get over how dated the graphics were. Everything was hard to parse, and there really wasn't a lot of direction on what I should be doing after Tutorial Island so I ultimately moved on. Then, in 2022, a YouTuber I ran across (who I will not be linking due to some problematic behavior) made a series where they played RS3 (the original version of RuneScape that kept updating), and it looked fascinating. They had a lot of quality of life improvements, the graphics were updated, and there was a ton of content that wasnt in OSRS at the time, so I decided to give it a go. Honestly, I played it for about a year, racking up a few hundred hours that were mostly Woodcutting and Divination lol, but eventually the glaring issues started piling up. The microtransactions being in my face were starting to get to me, it generally was a much more of a "dead game". I barely ran into anyone chatty and the guilds I were in were often not super active. Eventually, due to those issues and bordem, I stopped playing again. 
+
+Around 2023 I started finding more of the OSRS content creators on YouTube, creators like [Settled](https://www.youtube.com/@Settledrs) with his Swampletics and Tileman series, or [J1mmy](https://www.youtube.com/@J1mmy) with his By Release series of just his general videos talking about OSRS history and whatnot. They really started getting me in a mindset to give OSRS another shot. I was working from home a lot at the time, so I decided to hop back on my account and chop some wood. Lo and behold at time of writing I am level 1200 and about 400 hours into the game, and I am having a blast!

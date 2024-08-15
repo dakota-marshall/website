@@ -1,0 +1,136 @@
+:root {
+
+    /* colors */
+    --textcolor: #ffff00;
+    background-image: url('/static/imgs/osrs/bg.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+body {
+    font-family: 'Runescape', sans-serif;
+    margin: 0;
+    color: var(--textcolor);
+    /* you can delete the line below if you'd prefer to not use an image */
+    background-size: 90px;
+    cursor: url('/static/cursors/DragonScimi.cur'), auto;
+}
+
+body p {
+    font-size: 20px;
+}
+
+body a {
+    color: white;
+}
+
+h1 {
+    color: var(--textcolor);
+}
+p {
+    color: var(--textcolor);
+}
+
+@font-face {
+font-family: Runescape;
+src: url('/static/fonts/runescape.ttf');
+}
+
+@font-face {
+font-family: Runescape
+src: url('/static/fonts/runescape_bold.ttf');
+font-weight: bold;
+}
+
+#pageTitle {
+    text-align: center;
+    font-size: 400%;
+    font-weight: bold;
+}
+
+.skillTable {
+    display: flex;
+    justify-content: center;
+}
+
+.skillTable table {
+    font-size: 150%;
+    background-color: #4d4d49;
+    /* background-image: url("/static/imgs/osrs/skills.png"); */
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+    /* background-position: center center; */
+
+}
+
+.skillTable td {
+    color: var(--textcolor);
+    padding: 0 5px;
+
+}
+.skillTable p {
+    text-align: center;
+    font-size: 67%;
+    margin-bottom: 5px;
+    line-height: 0px;
+    color: var(--textcolor);
+}
+
+.mainContainer {
+  display: flex; 
+  justify-content: center;
+  padding: 0 20%; 
+  box-sizing: border-box; 
+}
+
+.mainContent {  
+  background-color: #3e3529;
+  border: solid;
+  border-color: #615740;
+  padding: 15px;
+  /* background-image: url("https://www.runescape.com/img/rsp777/bg2.jpg"); */
+  /* backgound-size: auto; */
+  display: grid;
+  grid-template-columns: 0.9fr 0.1fr 2.3fr;
+  /* grid-template-rows: 0.4fr 1.3fr 1.3fr 1fr 1fr; */
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-auto-rows: minmax(30px, auto);
+  grid-template-areas:
+    "skills . Overview"
+    "Section-1 Section-1 Section-1"
+    "Section-2 Section-2 Section-2"
+    "Section-3 Section-3 Section-3";
+}
+
+.Title { 
+    text-align: center;
+}
+
+.skills { 
+  text-align: center;
+}
+
+.Overview { 
+    grid-area: Overview; 
+    font-size: 20px;
+}
+
+.Section-1 { 
+    grid-area: Section-1; 
+    font-size: 20px;
+
+}
+
+.Section-2 { 
+    grid-area: Section-2; 
+    font-size: 20px;
+}
+
+.Section-3 { 
+    grid-area: Section-3; 
+    font-size: 20px;
+}
+
