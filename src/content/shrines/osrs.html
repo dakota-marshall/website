@@ -8,10 +8,6 @@
 </head>
 
 <body>
-    <!-- SCM Music Player https://www.scmplayer.net -->
-    <script type="text/javascript" src="https://www.scmplayer.net/script.js"
-        data-config="{'skin':'skins/simpleOrange/skin.css','volume':24,'autoplay':true,'shuffle':false,'repeat':1,'placement':'bottom','showplaylist':false,'playlist':[{'title':'Scape Main','url':'https://dakotamarshall.net/static/audio/Scape_Main.ogg'}]}"></script>
-    <!-- SCM Music Player script end -->
     <div id="floatingImages">
         <a href="/">
             <img src="/static/imgs/osrs/home.webp" width="50" style="position:fixed; left: 10px; top: 10px;"
@@ -152,11 +148,21 @@
             <div class="Overview">
                 <h2>Overview</h2>
                 <p>The goal of this shrine is to serve less as an overview of what Runescape is, and more about
-                    documenting my journey through OSRS.</p>
+                    documenting my journey through OSRS. Its also still a WIP</p>
 
                 <p>Runescape is an MMORPG that opened its doors all the way back in 2001, and as a kid I honestly never
                     played it. I grew up on other games and never found myself caught up in Runescape. It wasn't until
                     probably around 2019 that I decided to pick it up.</p>
+
+                <figure>
+                    <figcaption>Runescape Main Theme</figcaption>
+                    <audio id="bg_audio" controls autoplay src="/static/audio/Scape_Main.ogg"></audio>
+                </figure>
+                <script>
+                    // BG Audio Settings
+                    var audio = document.getElementById("bg_audio");
+                    audio.volume = 0.05;
+                </script>
 
             </div>
             <div class="Section-1">
