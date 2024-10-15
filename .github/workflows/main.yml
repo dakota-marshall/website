@@ -24,7 +24,7 @@ jobs:
         pwd
         ls
     - name: Build Eleventy (11ty)
-      uses: TartanLlama/actions-eleventy@v1.3
+      uses: cjerrington/actions-eleventy@master
       with:
         install_dependencies: true
         args: '--input=src/ --output=public/ --config=.eleventy.js'
