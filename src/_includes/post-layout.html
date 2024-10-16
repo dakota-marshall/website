@@ -78,10 +78,12 @@
             <main>
                 <div style="text-align: left; overflow-x: auto">
                     {{ content }}
+
                 </div>
             </main>
-            {% include 'right_sidebar.html' %}
+
         </div>
+        <div id="c_widget" style="overflow-x: auto;"></div>
         <footer id="footer" style="margin-top: 10px;">
             <div><img alt="computer" src="/static/imgs/computerconnect.gif" /> <a rel="me"
                     href="https://infosec.town/@bonealisa">E</a>st. 2024-03-12, by Dakota the fucking <a
@@ -282,11 +284,12 @@
         main {
             background-color: #43256E;
             flex: 1;
+            font-size: large;
             padding: 20px;
             order: 2;
             flex-grow: 0;
             flex-shrink: 0;
-            flex-basis: 465px;
+            flex-basis: 690px;
         }
 
         /* what's this "order" stuff about??
@@ -416,3 +419,4 @@
 </body>
 
 </html>
+<script src="/static/scripts/post-comment-widget.js"></script>

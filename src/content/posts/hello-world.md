@@ -1,5 +1,5 @@
 ---
-layout: layout.html
+layout: post-layout.html
 title: Hello World!
 summary: A quick introduction to the blog and why I am rewriting my site
 date: 2024-03-13

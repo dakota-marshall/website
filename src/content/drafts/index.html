@@ -1,0 +1,26 @@
+---
+layout: layout.html
+eleventyExcludeFromCollections: true
+title: The Arcane Chronicle Drafts
+---
+<div style="text-align: center;">
+    <img src="/static/imgs/arcane-chronicles.png" style="width: 100%;">
+    <img src="/static/imgs/feather-writing.gif">
+    <p>Currently in the works drafts</p>
+</div>
+<hr />
+
+{% for draft in collections.draft reversed %}
+<h2><a href="{{ draft.url }}">{{ draft.data.title }}</a></h2>
+<p><i>Posted: {{ draft.date | postDate }}</i></p>
+<p><i>{{ draft.data.summary }}</i></p>
+<p>🕙 {{ draft.content | timeToRead }}</p>
+<p>Tags:
+    {% for tag in draft.data.tags %}
+    {% if tag != 'draft' %}
+    <a class="tag" href="/content/categories/{{ tag }}">{{ tag }}</a>
+    {% endif %}
+    {% endfor %}
+</p>
+<hr />
+{% endfor %}
