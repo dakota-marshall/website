@@ -55,6 +55,12 @@ Any sites that dont have a button go here aswell.
 
 - [ayano's JavaScript Guestbook widget](https://virtualobserver.moe/ayano/comment-widget)
 
+<section id="site_content_links">
+
+### Links
+
+- [Website to convert Google Drive download links into direct download links](https://sites.google.com/site/gdocs2direct/)
+
 <section id="sysadmin_resources">
 
 ## IT / Sysadmin Resources
