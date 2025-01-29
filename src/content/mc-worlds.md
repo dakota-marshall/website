@@ -20,5 +20,5 @@ This is a collection of my minecraft worlds that my group of friends have played
 | **Creative World** | _2020-??-??_ | The Creative world we used for Stank 3, has some build Ideas, farm builds, and redstone stuffs |  [download](https://drive.google.com/uc?export=download&id=1rHZbJMoLWIPYfzCfaOI5fIDWlpTklX3t)    |
 | **Stank 4** | _2023-06-14_ | A very shortlived foray back into minecraft. Not a lot happened on this map, but still some neat stuff |  [download](https://drive.google.com/uc?export=download&id=1hvkPZwSW2TiG3D9mviqh3MpuWuQnLr-y)    |
 | **Stank 5** | _2024-08-20_ | An even shorter, and honestly failed attempt to get back into minecraft... Nothing really here, but saved it anyways |  [download](https://drive.google.com/uc?export=download&id=1qpP6AHLU-Ih7wOfga_mTFjwkfyw8MOjn)    |
-|  **Stank Redux**  | _2025-01-19_ | Our start at (hopefully), the groups forever world. I want this world to be the one we use any time we want to play. Ill be sure to update as I can. |  [download]() |
+|  **Stank Redux**  | _2025-01-19_ (Ongoing) | Our start at (hopefully), the groups forever world. I want this world to be the one we use any time we want to play. Ill be sure to update as I can. |  [download](https://drive.google.com/uc?export=download&id=1NZ6THCRzY5kW8gJwM9Sj9C8M0O_e86V8) Updated 2025-01-28 |
 
