@@ -48,6 +48,7 @@ Any sites that dont have a button go here aswell.
 ### Discovery
 
 - [Marginalia Search Engine](https://search.marginalia.nu/)
+- [Ring Link - Ad-style webwring navlink](https://evehibi.nekoweb.org/ringlink/info)
 
 <section id="site_content_guestbooks">
 
