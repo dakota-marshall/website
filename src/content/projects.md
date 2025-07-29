@@ -57,6 +57,19 @@ Here a are a list of the projects I am working on!
 </br>
 <img src="/static/imgs/lightning-sep.gif" style="width: 70%;"/>
 
+## Pico Games
+
+Games I have made in Pico-8! Save the cart image, or click it to open the web version! To see the source code, click the title.
+
+<div>
+    <a href="https://github.com/dakota-marshall/pico-games/blob/main/bards-tale.p8"><h3>A Bards Tale</h3></a>
+    <a href="/content/pico-games/bards-tale/">
+        <img src="/static/imgs/pico-carts/bards-tale.p8.png"/>
+    </a>
+</div>
+
+<img src="/static/imgs/lightning-sep.gif" style="width: 70%;"/>
+
 ## Coding
 
 ### [OGS-Python](https://ogs-python.dakotamarshall.net/) 
