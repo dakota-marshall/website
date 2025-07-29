@@ -5,6 +5,7 @@ const { DateTime } = require("luxon");
 
 module.exports = function(eleventyConfig) {
   // Copy the `img/` directory
+  eleventyConfig.addPassthroughCopy("src/content/pico-games/**/*.js");
   eleventyConfig.addPassthroughCopy("src/static");
   
   // Plugins
